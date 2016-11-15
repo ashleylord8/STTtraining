@@ -47,7 +47,7 @@ uri = "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/"+
 
 # 'corpus.txt' is name of local file containing the corpus to be uploaded
 # >>>> REPLACE THE FILE BELOW WITH YOUR OWN CORPUS FILE
-with open('examples.txt', 'rb') as f:
+with open('intent_examples.txt', 'rb') as f:
    r = requests.post(uri, auth=(username,password), verify=False, headers=headers, data=f)
 
 print "\nAdding corpus file returns: ", r.status_code
