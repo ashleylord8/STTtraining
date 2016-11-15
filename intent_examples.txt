@@ -1,0 +1,2767 @@
+[{
+ "intent": "capabilities",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "can I manipulate the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "help",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "help me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How are you going to help me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how can you help me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "need help",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me what things you can do",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me what you can do",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "What are you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what are you capable of",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what are your capabilities Watson",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what can I do",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "What can i say",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what can you do",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what can you do for me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what can you help me with",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what do you know",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what else",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what things can you do",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "goodbyes",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "adieu",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "adios",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "au revoir",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "bye",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "bye bye",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "bye now",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "cya",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "farewell",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "go",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "goodbye",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good bye",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good day",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good night",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "gotta go",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "gotta run",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "gtg",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I'm leaving",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "later",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "laters",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "leave",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "logging off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "my time is up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "ok bye",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "out of time",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "over and out",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "run",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "see ya",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "see ya later",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "see ya soon",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "see you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "should be going",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "should go",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "signing off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "signing out",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "so long",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "soon",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "thanks watson",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "thank you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "then bye",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "toodles",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "greetings",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "aloha",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "bad",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "bonjour",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "buenos dias",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "ciao",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "feeling bit low",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "g'day",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good day",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good evening",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good how are you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "good morning",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "greetings",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Hello",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Hello, how are you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Hello Watson",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hey",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "heya",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hey there",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hi",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hi how are u",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hi there",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Hi watson",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hiya",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Hola",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hola como estas",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How are you doing",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "howdy",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I am not feeling good",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I'm feeling good thanks",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Its not that good",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "namaste",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "What's up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "yello",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "yo",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "locate_amenity",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "Amenities",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Are there any around here",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you find a good place to",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you find me a",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you find the nearest for me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you locate a",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "drive to the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "find a",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Find best option",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "find me a",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "gas",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "get me directions",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "go to a",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "go to the closest",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I am hungry",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I'd like to get something to eat",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i'm hungry",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "im hungry I want to eat something",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i need some coffee",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i need to stop for",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Information on locations near me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want to stop for some food",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "let's get some grub",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "locate ammenity",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Navigation",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "nearby restaurant",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "order a pizza",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "pizza",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "restaurant",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "restaurants",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "restroom",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "show me the best path",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Stop for food/coffee",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "take me to",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is closeby",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is near",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is nearby",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is near me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's closeby",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's close to me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's near",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's nearby Watson",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where are the closest restrooms",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where can i drink",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where can i eat pizza",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where can i have pizza",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where is a",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where is ATM",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where is the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where's the nearest exit",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "not_specified",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "any",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "anything",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "doesn't matter",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "no preference",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whatever",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "you decide",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "your favorite",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "off_topic",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "aho",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "asdasdasda",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "asdasidjiwe",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "book a flight for NY on sunday",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "carrot",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "cats are my favorite animal",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "cold",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "cool",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "culd",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "deploy airbags",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "dfddfg",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "don't you know any jokes",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "do you hate",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Do you like",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "do you love",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "fdsafsaHi watson",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "funny",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "go fast",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "go slow",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hot",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how close is",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how far is",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how far is the moon",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how far to",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how many licks does it take to get to the center of a tootsie roll",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how much do you weigh",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how old are you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how tall are you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "huhu",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I'd like to have dinner with you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I enjoy petting cats",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I love dolphins",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I love spicy food",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i need a new wheelchair",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I need to shut it down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "it's too dark",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i want jokes",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want to date you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want to eat tacos everyday",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i want to see how this demo works",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want to talk",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "know any jokes",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "lgiths",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "lgits",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "make me a sandwich",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "near",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "nope",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Nuts",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "ok watson, why should I use you",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "open door",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "please open the sunroof",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "poop",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Post-it notes taste terrible.",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "repair my car",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "roll down windows",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "shutdown",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "shut down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "sup",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "system error, unable to lonin",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me a joke",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me joke",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me jokes",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me some jokes",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me your favorite color",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me your favorite foods",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "test",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "testing om",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "This is awesome",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "This is good",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Turn left",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is my speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is your name",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what kind of food do you eat",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "What's the speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats the square root of 70",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's the time",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's your",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's your favorite",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats your favorite color",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats your favorite movie",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's your name",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats your name",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what time is it",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what types of food do you like",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "when will it be funny",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Where are we",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where is the poop deck on this ship",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where should I turn",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "which color is best for wedding",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "why",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "why is the sky blue",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "yeah",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "yes",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Yolo",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "you are funny",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "You're asking me too much",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "out_of_scope",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "bluetooth",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Can I play music through bluetooth from my phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "change bulb",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "changing gears",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "changing the light bulb",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "checking the engine oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "coolant level",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "fuel tank flap",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how can i change oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how can i connect the phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how can i find current level of oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how can i lock the car",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how can i replace light bulb",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i adjust exterior mirrors",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i adjust head restraint",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i adjust the cruise control speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i adjust the mirror",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i adjust the mirror inside",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i adjust the rear view mirror",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i adjust the vehicle distance",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i arm the alarm",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i browse the tracks on the iPod",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i cancel cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i change oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i change the headlight bulbs",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i change the lights bulb",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i change the oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i clean the vehicle",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i close the window",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i connect my phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i connect USB device",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i control a phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i disable the vehicle stability control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i fill in the engine oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i find the fuel consumption",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i lock the window",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i lock the windows",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i lock the windows to prevent children from opening",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i open the doors",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i open the fuel filler flap",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i open the power windows",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i open the rear window",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i open the side window",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i open the tank fuel",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i open the window",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How do I pair my android phone to the radio",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How do I pair my iPhone to the radio",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i pause song in my iPod",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i play an iPod",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i play the track on the iPod",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How do I program my radio stations",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i refill the engine oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i resume cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i resume the cruise speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i resume the vehicle speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i save my favourite radio station",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i save the seat position",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i scroll the screen",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i select a desired track on the iPod",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i select the song on the iPod",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i set the adaptive cruise control speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i set the cruise speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i set the vehicle speed",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i switch on the cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i tune the radio",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn off ambient lights",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn off the alarm",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn off the cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn off the high beams",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn off the traction control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn off voice guidance",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on adaptive cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on ambient lights",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on front seat heating",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on headlamps",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on high beams",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on the alarm",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on the cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on the fog lamps",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How do I turn on the high-beams",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on the pre collision system",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on the traction control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on traffic info",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i turn on windscreen washer",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i unlock the windows",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How do I use cruise control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i use the blind spot monitor",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i use the electric power steering",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i use the iPod",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i use the pre collision system",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i use the traction control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how do i wash the car",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How frequently should I change the oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how often should i change the oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how to adjust the vehicle to vehicle distance",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how to change engine oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how to change oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how to change the oil",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How to connect bluetooth",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how to replace light bulbs",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how to switch on the fog lights",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how to turn on warning lights",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Is there a lane change assist feature",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Is there an automatic parallel park feature",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Is there a warning light for low washer fluid",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "light bulbs replacement",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "opening the windows",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "operating the radio",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "parking brake",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "refilling the engine coolant",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "show me how to change the light bulbs",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "switch on fog light",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn off traffic info",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what are the crash ratings",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is the pre collision system",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is the traction control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is the vehicle stability control",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what kind of fuel does the car require",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what kind of fuel should i use",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "What PSI do I inflate the spare tire to",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's the tires pressure",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what type of oil do i need",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where are fog lights",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where are the lights",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "where can i start air conditioning",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Where is the fuse box",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Where is the fuse box located",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "phone",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "answer the phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "call dad",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "call on the telephone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "dial Home",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "do you have a phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I'd like to call my mom",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I'd like to make a call",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want to text my father",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I would like to call someone on the phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "make a phone call",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "smartphone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "text mom",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "text someone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "use the phone",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "What's your phone number",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "traffic_update",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "are there any accidents ahead",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Are there any jams",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Estimated time left",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "estimated time of arrival",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "ETA",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "give me traffic updates",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how far",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how is traffic looking this evening",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how long it would take me get home",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how long until I arrive",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How long will it take to get there",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "How's the traffic",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how's the traffic today",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how's traffic",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hows traffic",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "hows traffic looking",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "is the highway busy",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "is there an accident ahead",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "jam",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "traffic conditions",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "traffic conditions on 85",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats my ETA",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's the Estimated Time of Arrival",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats the traffic like on 101",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "when do we arrive",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "when rain there is lot of trafic jams",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "when will we arrive",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "turn_down",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "decrease the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I need you to turn my down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "lessen the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "lower the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "please turn the down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "reduce the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "set to low",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "the needs to be turned down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn down the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn it down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn my down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn on low",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn the down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn the down for me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn this down",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "turn_off",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "cancel",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can I turn off the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "close",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I don't need the anymore",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I need my off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want the off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "no more",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "power off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "shut",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "shut off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "stop",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "stop the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "switch it off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "switch off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "switch off please",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "switch off the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Turn off my",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn off my please",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn off the for me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn off the please",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn the off",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "will you turn my off please",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "turn_on",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-23T19:42:40.485Z",
+ "examples": [
+  {
+   "text": "can  be turned on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can i have some",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you turn on the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "find me a good station",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i want the on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want to listen to",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "i want to turn on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "music",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "on now",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "play",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "play me some",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "power on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "power on the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "start",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "start up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "switch on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "switch on the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn my on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn my on for me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn on my",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn on my lights",
+   "created": "2016-10-23T19:42:40.485Z",
+   "updated": "2016-10-23T19:42:40.485Z"
+  },
+  {
+   "text": "Turn on the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn on the light",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn on the please",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn the on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "watson please turn my on",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "turn_up",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "amplify the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "boost",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you increase the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you turn my up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "can you turn the up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "enhance the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "increase the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "increase the for me",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "intensify",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "I want more",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "magnify the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "play the louder",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "please turn my up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "please turn the up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "please turn up the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "set to high",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "step up the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn on high",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn the up",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn the up now",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn up the",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "turn up this",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}, 
+{
+ "intent": "weather",
+ "created": "2016-10-19T17:28:28.184Z",
+ "updated": "2016-10-19T17:28:28.184Z",
+ "examples": [
+  {
+   "text": "check the weather",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "check the wheather",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "check weather",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "Does the weather get worse",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "do I need a jacket",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how cold",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how cold is it out",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how cold is it outside",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how hot",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how hot is it outside",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how long will it rain",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "how warm is it",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "is it dark outside",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "is it raining",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "It's cold here",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "it's hot",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "tell me the weather",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what is the weather like",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "what's the weather",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats the weather like right now",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "whats the weather outside",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "When will the rain stop",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  },
+  {
+   "text": "when will the sun come out",
+   "created": "2016-10-19T17:28:28.184Z",
+   "updated": "2016-10-19T17:28:28.184Z"
+  }
+ ],
+ "description": null
+}]

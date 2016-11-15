@@ -1,9 +1,9 @@
 // script to create examples.txt for training from the conversation workspace.
 
 var fs = require('fs');
-var path_intents = './training_data/intent_examples.txt';
-var path_entities = './training_data/entity_examples.txt';
-fs.readFile('./car_workspace.json', function (err, data) {
+var path_intents = './intent_examples.txt';
+var path_entities = './entity_examples.txt';
+fs.readFile('./workspace.json', function (err, data) {
   if (err) {
       return console.error(err);
   }
