@@ -12,31 +12,31 @@ Replace `workspace.json` with the desired Conversation workspace JSON you wish t
 
 ### Get the Intent Examples from Workspace
 1. Navigate to the corect directory by using the following command within the terminal:
-  
+
   ```bash
   cd ./STTtraining
   ```
 
 2. Then run `getExamples.js`:
-  
+
   ```bash
   node getExamples.js
   ```
-  
-3. The file `examples.txt` should be updated with current intent examples.
+
+3. The file `examples.txt` should be updated with current intent and entity examples.
 
 ### Use Speech to Text Service
 Copy the credentials (`username` and `password`) from your Speech to Text service into the `testSTTcustom.py` script (lines 21 and 22). Save your changes in this file.
 
 ### Train the Speech to Text Service
 1. Make sure to still be in the corect directory.
-  
+
   ```bash
   cd ./STTtraining
   ```
-  
+
 2. Then run the script:
-  
+
   ```bash
   python testSTTcustom.py
   ```
