@@ -10,7 +10,7 @@ What are you
 what are you capable of
 what are your capabilities Watson
 what can I do
-What can i say
+What can I say
 what can you do
 what can you do for me
 what can you help me with
@@ -135,9 +135,9 @@ what's close to me
 what's near
 what's nearby Watson
 where are the closest restrooms
-where can i drink
-where can i eat pizza
-where can i have pizza
+where can I drink
+where can I eat pizza
+where can I have pizza
 where is a
 where is ATM
 where is the
@@ -254,93 +254,93 @@ changing the light bulb
 checking the engine oil
 coolant level
 fuel tank flap
-how can i change oil
-how can i connect the phone
-how can i find current level of oil
-how can i lock the car
-how can i replace light bulb
-how do i adjust exterior mirrors
-how do i adjust head restraint
-how do i adjust the cruise control speed
-how do i adjust the mirror
-how do i adjust the mirror inside
-how do i adjust the rear view mirror
-how do i adjust the vehicle distance
-how do i arm the alarm
-how do i browse the tracks on the iPod
-how do i cancel cruise control
-how do i change oil
-how do i change the headlight bulbs
-how do i change the lights bulb
-how do i change the oil
-how do i clean the vehicle
-how do i close the window
-how do i connect my phone
-how do i connect USB device
-how do i control a phone
-how do i disable the vehicle stability control
-how do i fill in the engine oil
-how do i find the fuel consumption
-how do i lock the window
-how do i lock the windows
-how do i lock the windows to prevent children from opening
-how do i open the doors
-how do i open the fuel filler flap
-how do i open the power windows
-how do i open the rear window
-how do i open the side window
-how do i open the tank fuel
-how do i open the window
+how can I change oil
+how can I connect the phone
+how can I find current level of oil
+how can I lock the car
+how can I replace light bulb
+how do I adjust exterior mirrors
+how do I adjust head restraint
+how do I adjust the cruise control speed
+how do I adjust the mirror
+how do I adjust the mirror inside
+how do I adjust the rear view mirror
+how do I adjust the vehicle distance
+how do I arm the alarm
+how do I browse the tracks on the iPod
+how do I cancel cruise control
+how do I change oil
+how do I change the headlight bulbs
+how do I change the lights bulb
+how do I change the oil
+how do I clean the vehicle
+how do I close the window
+how do I connect my phone
+how do I connect USB device
+how do I control a phone
+how do I disable the vehicle stability control
+how do I fill in the engine oil
+how do I find the fuel consumption
+how do I lock the window
+how do I lock the windows
+how do I lock the windows to prevent children from opening
+how do I open the doors
+how do I open the fuel filler flap
+how do I open the power windows
+how do I open the rear window
+how do I open the side window
+how do I open the tank fuel
+how do I open the window
 How do I pair my android phone to the radio
 How do I pair my iPhone to the radio
-how do i pause song in my iPod
-how do i play an iPod
-how do i play the track on the iPod
+how do I pause song in my iPod
+how do I play an iPod
+how do I play the track on the iPod
 How do I program my radio stations
-how do i refill the engine oil
-how do i resume cruise control
-how do i resume the cruise speed
-how do i resume the vehicle speed
-how do i save my favourite radio station
-how do i save the seat position
-how do i scroll the screen
-how do i select a desired track on the iPod
-how do i select the song on the iPod
-how do i set the adaptive cruise control speed
-how do i set the cruise speed
-how do i set the vehicle speed
-how do i switch on the cruise control
-how do i tune the radio
-how do i turn off ambient lights
-how do i turn off the alarm
-how do i turn off the cruise control
-how do i turn off the high beams
-how do i turn off the traction control
-how do i turn off voice guidance
-how do i turn on adaptive cruise control
-how do i turn on ambient lights
-how do i turn on cruise control
-how do i turn on front seat heating
-how do i turn on headlamps
-how do i turn on high beams
-how do i turn on the alarm
-how do i turn on the cruise control
-how do i turn on the fog lamps
+how do I refill the engine oil
+how do I resume cruise control
+how do I resume the cruise speed
+how do I resume the vehicle speed
+how do I save my favourite radio station
+how do I save the seat position
+how do I scroll the screen
+how do I select a desired track on the iPod
+how do I select the song on the iPod
+how do I set the adaptive cruise control speed
+how do I set the cruise speed
+how do I set the vehicle speed
+how do I switch on the cruise control
+how do I tune the radio
+how do I turn off ambient lights
+how do I turn off the alarm
+how do I turn off the cruise control
+how do I turn off the high beams
+how do I turn off the traction control
+how do I turn off voice guidance
+how do I turn on adaptive cruise control
+how do I turn on ambient lights
+how do I turn on cruise control
+how do I turn on front seat heating
+how do I turn on headlamps
+how do I turn on high beams
+how do I turn on the alarm
+how do I turn on the cruise control
+how do I turn on the fog lamps
 How do I turn on the high-beams
-how do i turn on the pre collision system
-how do i turn on the traction control
-how do i turn on traffic info
-how do i turn on windscreen washer
-how do i unlock the windows
+how do I turn on the pre collision system
+how do I turn on the traction control
+how do I turn on traffic info
+how do I turn on windscreen washer
+how do I unlock the windows
 How do I use cruise control
-how do i use the blind spot monitor
-how do i use the electric power steering
-how do i use the iPod
-how do i use the pre collision system
-how do i use the traction control
-how do i wash the car
+how do I use the blind spot monitor
+how do I use the electric power steering
+how do I use the iPod
+how do I use the pre collision system
+how do I use the traction control
+how do I wash the car
 How frequently should I change the oil
-how often should i change the oil
+how often should I change the oil
 how to adjust the vehicle to vehicle distance
 how to change engine oil
 how to change oil
@@ -365,13 +365,13 @@ what is the pre collision system
 what is the traction control
 what is the vehicle stability control
 what kind of fuel does the car require
-what kind of fuel should i use
+what kind of fuel should I use
 What PSI do I inflate the spare tire to
 what's the tires pressure
-what type of oil do i need
+what type of oil do I need
 where are fog lights
 where are the lights
-where can i start air conditioning
+where can I start air conditioning
 Where is the fuse box
 Where is the fuse box located
 answer the phone
@@ -457,7 +457,7 @@ turn off the please
 turn the off
 will you turn my off please
 can  be turned on
-can i have some
+can I have some
 can you turn on the
 find me a good station
 i want the on
