@@ -88,26 +88,6 @@ r = requests.get(uri, auth=(username,password), verify=False, headers=headers)
 print r.text   # NEED TO FIX THIS - does not work when piping output to a file                 # and words have utf-8 characters
 
 ##########################################################################
-# Step 4: Add a single user word
-# One can pass sounds_like and display_as fields or leave empty (if empty
-# the service will try to create its own version of sounds_like)
-##########################################################################
-data = {"sounds_like" : ["T. C. P. I. P."], "display_as" : "TCP/IP"}
-wordToAdd = "tcpip"
-u = unicode(wordToAdd, "utf-8")
-uri = "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/"+customID+"/words/"+u
-jsonObject = json.dumps(data).encode('utf-8')
-r = requests.put(uri, auth=(username,password), verify=False, headers=headers, data=jsonObject)
-print "Adding single word returns: ", r.status_code
-
-# Alternatively, one can add multiple words in one request
-data = {"words" : [{"word" : "IEEE", "sounds_like" : ["I. triple E."], "display_as" : "IEEE"}, {"word" : "hhonors", "sounds_like" : ["H. honors", "hilton honors"], "display_as" : "HHonors"}]}
-uri = "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/"+customID+"/words"
-jsonObject = json.dumps(data).encode('utf-8')
-r = requests.post(uri, auth=(username,password), verify=False, headers=headers, data=jsonObject)
-print "\nAdding multiple words returns: ", r.status_code
-
-##########################################################################
 # Get status of model - only continue to training if 'ready'
 ##########################################################################
 uri = "https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/"+customID
