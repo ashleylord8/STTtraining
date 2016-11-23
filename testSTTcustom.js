@@ -99,4 +99,6 @@ if (process.argv.length == 3 && param1 == 'train') {
         })
         .done(function(response) {});
 
+} else {
+    console.log('ERROR - Make sure you have the appropriate command line arguments!');
 }
