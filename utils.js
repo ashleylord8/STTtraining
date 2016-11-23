@@ -68,14 +68,16 @@ var createCustomModel = function(callback) {
   }, function(error, response, body) {
     console.log('Model creation returns: ' + response.statusCode);
     var text = JSON.parse(body);
-    if (response.statusCode != 201) {
+    if (response.statusCode != 201 || error) {
       console.error("Failed to create model");
       console.error(text.error);
-      process.exit(1);
+      callback(error, null);
     }
-    var customID = text.customization_id;
-    console.log('Model customization_id: ', customID);
-    callback(null, customID);
+    else {
+      var customID = text.customization_id;
+      console.log('Model customization_id: ', customID);
+      callback(null, customID);
+    }
   });
 }
 
@@ -100,12 +102,14 @@ var addCorpusFile = function(customID, callback) {
     }, function(error, response, body) {
       console.log('\nAdding corpus file returns: ' + response.statusCode);
       var text = JSON.parse(body);
-      if (response.statusCode != 201) {
-          console.log('Failed to add corpus file');
-          console.log(text.error);
-          process.exit(1);
+      if (response.statusCode != 201 || error) {
+        console.error('Failed to add corpus file');
+        console.error(text.error);
+        callback(error, null);
       }
-      callback(null, customID);
+      else {
+        callback(null, customID);
+      } 
     });
   });
 }
@@ -127,7 +131,13 @@ var getCorpusStatus = function(customID, callback) {
         "status": status,
         "customID": customID
     };
-    callback(null, retObj);
+    if (response.statusCode != 200 || error) {
+        console.error('Failed to get corpus status');
+        callback(error, null);
+    }
+    else {
+      callback(null, retObj);
+    }
   });
 }
 
@@ -138,7 +148,10 @@ var waitForCorpusStatus = function(customID, callback) {
     getCorpusStatus(customID, function(err, retObj) {
       var status = retObj.status;
       time = time + 10;
-      if (status == 'analyzed') {
+      if(err) {
+        callback(err, null);
+      }
+      else if (status == 'analyzed') {
         clearInterval(intervalObject);
         console.log('status: ', status, '(', time, ')');
         console.log('Corpus analysis done!');
@@ -165,8 +178,14 @@ var showAllOOVs = function(customID, callback) {
     },
     url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID + '/words'
   }, function(error, response, body) {
-    console.log(body);
-    callback(null, customID);
+    if (response.statusCode != 200 || error) {
+        console.error('Failed to show all OOVs');
+        callback(error, null);
+    }
+    else {
+      console.log(body);
+      callback(null, customID);
+    }
   });
 }
 
@@ -185,7 +204,13 @@ var getModelStatus = function(customID, callback) {
       "status": status,
       "customID": customID
     };
-    callback(null, retObj);
+    if (response.statusCode != 200 || error) {
+        console.error('Failed to get model status');
+        callback(error, null);
+    }
+    else {
+      callback(null, retObj);
+    }
   });
 }
 
@@ -196,7 +221,9 @@ var waitForModelStatus = function(customID, callback) {
     getModelStatus(customID, function(err, retObj) {
       var status = retObj.status;
       time = time + 10;
-      if (status == 'ready') {
+      if(err) {
+        callback(err, null);
+      } else if (status == 'ready') {
         clearInterval(intervalObject);
         console.log('status: ', status, '(', time, ')');
         var retObj = {
@@ -227,10 +254,12 @@ var setupTrainingModel = function(customID, callback) {
     console.log('\nTraining request sent, returns: ' + response.statusCode);
     var text = JSON.parse(body);
     if (response.statusCode != 200) {
-      console.log("Training failed to start - exiting!");
-      process.exit(1);
+      console.error("Training failed to start - exiting!");
+      callback(error, null);
     }
-    callback(null, customID);
+    else {
+      callback(null, customID);
+    }
   });
 }
 
@@ -249,7 +278,13 @@ var getTrainingStatus = function(customID, callback) {
         "status": status,
         "customID": customID
     };
-    callback(null, retObj);
+    if (response.statusCode != 200 || error) {
+        console.error('Failed to get training status');
+        callback(error, null);
+    }
+    else {
+      callback(null, retObj);
+    }
   });
 }
 
@@ -260,7 +295,9 @@ var waitForTrainingStatus = function(customID, callback) {
     getModelStatus(customID, function(err, retObj) {
       var status = retObj.status;
       time = time + 10;
-      if (status == 'available') {
+      if(err) {
+        callback(err, null);
+      } else if (status == 'available') {
         clearInterval(intervalObject);
         console.log('status: ', status, '(', time, ')');
         console.log('Training complete!');
@@ -286,8 +323,14 @@ var listAllCustomizations = function(callback) {
     url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/'
   }, function(error, response, body) {
     console.log('\nGet models returns:');
-    console.log(body);
-    callback(null);
+    if (response.statusCode != 200 || error) {
+        console.error('Failed to list all customizations');
+        callback(error, null);
+    }
+    else {
+      console.log(body);
+      callback(null);
+    }
   });
 }
 
@@ -301,7 +344,13 @@ var deleteCustomModel = function(customID, callback) {
     url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID
   }, function(error, response, body) {
     console.log('\nModel deletion returns:' + response.statusCode);
-    callback();
+    if (response.statusCode != 200 || error) {
+        console.error('Failed to delete custom model :' + customID );
+        callback(error, null);
+    }
+    else {
+      callback(null);
+    }
   });
 }
 
