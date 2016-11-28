@@ -16,20 +16,21 @@ Replace `workspace.json` with the desired Conversation workspace JSON you wish t
   ```bash
   cd ./STTtraining
   ```
+2. Copy the credentials (`username` and `password`) from your Speech to Text service into the `testSTTcustom.js` script (lines 56 and 57). Save your changes in this file. 
 
-2. To `train` the speech to text (STT) service, run the following command :
+3. To `train` the speech to text (STT) service, run the following command :
 
   ```bash
   node testSTTcustom.js train
   ```
 If you get back `Training complete!` then your Speech to Text service has been trained.
 
-3. To `list` all STT customization models, run the following command :
+4. To `list` all STT customization models, run the following command :
 
   ```bash
   node testSTTcustom.js list
   ```
-4. To `delete` a STT customization model whose customization id is *custom_id*, run the following command :
+5. To `delete` a STT customization model whose customization id is *custom_id*, run the following command :
 
   ```bash
   node testSTTcustom.js delete custom_id
