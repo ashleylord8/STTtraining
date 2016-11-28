@@ -11,12 +11,12 @@ Replace `workspace.json` with the desired Conversation workspace JSON you wish t
   * Make sure to name the desired workspace JSON as `workspace.json` within the project folder.
 
 ### Running the code
-1. Navigate to the corect directory by using the following command within the terminal:
+1. Navigate to the correct directory by using the following command within the terminal:
 
   ```bash
   cd ./STTtraining
   ```
-2. Copy the credentials (`username` and `password`) from your Speech to Text service into the `testSTTcustom.js` script (lines 56 and 57). Save your changes in this file. 
+2. Copy the credentials (`username` and `password`) from your Speech to Text service into the `utils.js` script (lines 56 and 57). Save your changes in this file. 
 
 3. To `train` the speech to text (STT) service, run the following command :
 
