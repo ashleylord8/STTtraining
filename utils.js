@@ -53,8 +53,8 @@ var data = {
 // Add Bluemix credentials here
 // See following instructions for getting your own credentials:
 // http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/gs-credentials.shtml#getCreds
-var username = '3a4c5c6e-6e5d-465d-ab2d-305e3fa3867a';
-var password = 'VVHQSL7naTA2';
+var username = '';
+var password = '';
 
 // Create the custom model
 var createCustomModel = function(callback) {
@@ -360,5 +360,5 @@ module.exports = {
   getTrainingStatus: getTrainingStatus,
   waitForTrainingStatus: waitForTrainingStatus,
   listAllCustomizations: listAllCustomizations,
-  deleteCustomModel: deleteCustomModel,
+  deleteCustomModel: deleteCustomModel
 };
