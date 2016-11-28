@@ -360,5 +360,5 @@ module.exports = {
   getTrainingStatus: getTrainingStatus,
   waitForTrainingStatus: waitForTrainingStatus,
   listAllCustomizations: listAllCustomizations,
-  deleteCustomModel: deleteCustomModel,
+  deleteCustomModel: deleteCustomModel
 };

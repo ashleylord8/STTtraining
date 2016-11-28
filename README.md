@@ -10,35 +10,29 @@ Replace `workspace.json` with the desired Conversation workspace JSON you wish t
     - Click the menu icon in the upper-right corner of the workspace tile, and then select `Download as JSON`.
   * Make sure to name the desired workspace JSON as `workspace.json` within the project folder.
 
-### Get the Intent Examples from Workspace
+### Running the code
 1. Navigate to the corect directory by using the following command within the terminal:
 
   ```bash
   cd ./STTtraining
   ```
 
-2. Then run `getExamples.js`:
+2. To `train` the speech to text (STT) service, run the following command :
 
   ```bash
-  node getExamples.js
+  node testSTTcustom.js train
   ```
+If you get back `Training complete!` then your Speech to Text service has been trained.
 
-3. The file `examples.txt` should be updated with current intent and entity examples.
-
-### Use Speech to Text Service
-Copy the credentials (`username` and `password`) from your Speech to Text service into the `testSTTcustom.py` script (lines 21 and 22). Save your changes in this file.
-
-### Train the Speech to Text Service
-1. Make sure to still be in the corect directory.
+3. To `list` all STT customization models, run the following command :
 
   ```bash
-  cd ./STTtraining
+  node testSTTcustom.js list
   ```
-
-2. Then run the script:
+4. To `delete` a STT customization model whose customization id is *custom_id*, run the following command :
 
   ```bash
-  python testSTTcustom.py
+  node testSTTcustom.js delete custom_id
   ```
-
-If you get back `Training complete!` then your Speech to Text service has been trained with the Conversation workspace.
+Please be sure to replace *custom_id* with the appropriate id in the above command.
+If you get back `Model deletion returns:200` then your STT custom model has been deleted
