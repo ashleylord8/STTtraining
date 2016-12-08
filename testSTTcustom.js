@@ -16,6 +16,9 @@ var addSingleWord = Promise.promisify(myUtils.addSingleWord);
 var addMultipleWords = Promise.promisify(myUtils.addMultipleWords);
 var getWords = Promise.promisify(myUtils.getWords);
 
+// addCorpusFile('f4204720-bcd9-11e6-acaa-019f979b89e1').then(function(retObj){
+//   return getCorpusStatus(retObj.customID, retObj.corpusName);
+// })
 //Create and Train a custom Model
 function createAndTrainCustomModel() {
     // Populate examples.txt with appropriate training phrases
