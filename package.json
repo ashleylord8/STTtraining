@@ -1,5 +1,5 @@
 {
-  "name": "STT Training",
+  "name": "STT-Training",
   "version": "1.0.0",
   "description": "A node.js script for training STT using Conversation workspace",
   "main": "testSTTcustom.js",

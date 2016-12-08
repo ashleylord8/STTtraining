@@ -3,6 +3,12 @@ var fs = require('fs');
 var utf8 = require('utf8');
 var path = './examples.txt';
 var workspace = {};
+var SpeechToTextV1 = require('watson-developer-cloud/speech-to-text/v1');
+
+var speech_to_text = new SpeechToTextV1({
+    username: 'f870766f-3ab4-4b92-9e32-410415e36a01',
+    password: 'q73OWKOYDsLd'
+});
 
 // Get all the intent examples and entities that are to be trained
 var getExamples = function(callback) {
@@ -45,7 +51,7 @@ var writeEntitiesToFile = function(fd, workspace) {
 
 
 // Change "name" and "description" to suit your own model
-var data = {
+var params = {
     "name": "Custom model from doc",
     "base_model_name": "en-US_BroadbandModel",
     "description": "My first STT custom model"
@@ -59,21 +65,13 @@ var password = 'q73OWKOYDsLd';
 
 // Create the custom model
 var createCustomModel = function(callback) {
-    request.post({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations',
-        body: JSON.stringify(data)
-    }, function(error, response, body) {
-        console.log('Model creation returns: ' + response.statusCode);
-        var text = JSON.parse(body);
-        if (response.statusCode != 201 || error) {
+    speech_to_text.createCustomization(params, function(err, res, body) {
+        console.log('Model creation returns: ' + body.statusCode);
+        if (err) {
             console.error("Failed to create model");
-            callback(text.error, null);
+            callback(err, null);
         } else {
-            var customID = text.customization_id;
+            var customID = res.customization_id
             console.log('Model customization_id: ', customID);
             callback(null, customID);
         }
@@ -86,27 +84,26 @@ var createCustomModel = function(callback) {
 // it whatever you want (no spaces) - if adding more than one corpus, add
 // them with different names
 var addCorpusFile = function(customID, callback) {
-    fs.readFile('examples.txt', function(err, data) {
-        if (err) {
-            callback(err, null);
+    fs.readFile('examples.txt', function(error, data) {
+        if (error) {
+            callback(error, null);
+        } else {
+            var params = {
+                "customization_id": customID,
+                "name": "corpus3",
+                "corpus": data
+            };
+            speech_to_text.addCorpus(params, function(err, res, body) {
+                console.log('Adding corpus file returns: ' + body.statusCode);
+                if (err) {
+                    console.error("Failed to add corpus");
+                    callback(err, null);
+                } else {
+                    callback(null, customID);
+                }
+            });
         }
 
-        request.post({
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-            },
-            url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID + '/corpora/corpus1',
-            body: data
-        }, function(error, response, body) {
-            console.log('\nAdding corpus file returns: ' + response.statusCode);
-            if (response.statusCode != 201 || error) {
-                console.error('Failed to add corpus file');
-                callback(text.error, null);
-            } else {
-                callback(null, customID);
-            }
-        });
     });
 }
 
@@ -114,20 +111,24 @@ var addCorpusFile = function(customID, callback) {
 // After corpus is uploaded, there is some analysis done to extract OOVs.
 // One cannot upload a new corpus or words while this analysis is on-going.
 var getCorpusStatus = function(customID, callback) {
-    request.get({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID + '/corpora'
-    }, function(error, response, body) {
-        var text = JSON.parse(body);
-        if (response.statusCode != 200 || error) {
+    var params = {
+        "customization_id": customID
+    };
+    speech_to_text.getCorpora(params, function(err, res, body) {
+        if (err) {
             console.error('Failed to get corpus status');
-            callback(text.error, null);
+            callback(err, null);
         } else {
-            var jsonObj = JSON.parse(body);
-            var status = jsonObj.corpora[0].status;
+            var status;
+            var recordsBeingProcessed = res.corpora.filter(function(record) {
+                return record['status'] == 'being_processed';
+            });
+            if (recordsBeingProcessed.length == 0) {
+                status = 'analyzed'
+            } else {
+                status = 'being_processed'
+            }
+
             var retObj = {
                 "status": status,
                 "customID": customID
@@ -139,46 +140,38 @@ var getCorpusStatus = function(customID, callback) {
 
 // Wait until corpus status is 'analyzed'
 var waitForCorpusStatus = function(customID, callback) {
-    var time = 0;
-    var intervalObject = setInterval(function() {
-        getCorpusStatus(customID, function(err, retObj) {
-            time = time + 10;
-            if (err)
-                callback(err, null);
-            var status = retObj.status;
-            if (status == 'analyzed') {
-                clearInterval(intervalObject);
-                console.log('status: ', status, '(', time, ')');
-                console.log('Corpus analysis done!');
-                var retObj = {
-                    "status": status,
-                    "customID": customID
-                };
-                callback(null, retObj);
-            } else {
-                console.log('status: ', status, '(', time, ')');
-            }
-        });
-    }, 10000);
+    var params = {
+        "customization_id": customID
+    };
+    speech_to_text.whenCorporaAnalyzed(params, function(err, res, body) {
+        if (err) {
+            callback(err, null);
+        } else {
+            var status = res.corpora[0].status;
+            var retObj = {
+                "status": status,
+                "customID": customID
+            };
+            console.log('status: ', status);
+            console.log('Corpus analysis done!');
+            callback(null, retObj);
+        }
+    });
 }
 
 // Show all OOVs found
 // This step is only necessary if user wants to look at the OOVs and
 // validate the auto-added sounds-like field. Probably a good thing to do though.
 var showAllOOVs = function(customID, callback) {
-    request.get({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID + '/words'
-    }, function(error, response, body) {
-        var text = JSON.parse(body);
-        if (response.statusCode != 200 || error) {
+    var params = {
+        "customization_id": customID
+    };
+    speech_to_text.getWords(params, function(err, res, body) {
+        if (err) {
             console.error('Failed to show all OOVs');
-            callback(text.error, null);
+            callback(err, null);
         } else {
-            console.log(body);
+            console.log(JSON.stringify(res.words, null, 2));
             callback(null, customID);
         }
     });
@@ -186,20 +179,15 @@ var showAllOOVs = function(customID, callback) {
 
 // Get status of model - only continue to training if 'ready' or 'available'
 var getModelStatus = function(customID, callback) {
-    request.get({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID
-    }, function(error, response, body) {
-        var text = JSON.parse(body);
-        if (response.statusCode != 200 || error) {
+    var params = {
+        "customization_id": customID
+    };
+    speech_to_text.getCustomization(params, function(err, res, body) {
+        if (err) {
             console.error('Failed to get model status');
-            callback(text.error, null);
+            callback(err, null);
         } else {
-            var jsonObj = JSON.parse(body);
-            var status = jsonObj.status;
+            var status = res.status;
             var retObj = {
                 "status": status,
                 "customID": customID
@@ -211,52 +199,41 @@ var getModelStatus = function(customID, callback) {
 
 //Wait until model status is 'ready' or 'available'
 var waitForModelStatus = function(customID, callback) {
-    var time = 0;
-    var intervalObject = setInterval(function() {
-        getModelStatus(customID, function(err, retObj) {
-            time = time + 10;
-            if (err) callback(err, null);
-
-            var status = retObj.status;
-            if (status == 'ready' || status == 'available') {
-                clearInterval(intervalObject);
-                console.log('status: ', status, '(', time, ')');
-                var retObj = {
-                    "status": status,
-                    "customID": customID
-                };
-                if (status == 'ready')
-                    console.log('Model is ready to be trained!');
-                if (status == 'available')
-                    console.log('Training complete!');
-                callback(null, retObj);
-            } else {
-                console.log('status: ', status, '(', time, ')');
-            }
-        });
-    }, 10000);
+    var params = {
+        "customization_id": customID
+    };
+    speech_to_text.whenCustomizationReady(params, function(err, res, body) {
+        if (err) {
+            callback(err, null);
+        } else {
+            var status = res.status;
+            var retObj = {
+                "status": status,
+                "customID": customID
+            };
+            console.log('status: ', status);
+            if (status == 'ready')
+                console.log('Model is ready to be trained!');
+            if (status == 'available')
+                console.log('Training complete!');
+            callback(null, retObj);
+        }
+    });
 }
 
 // Step 4: Start training the model
 // After starting this step, need to check its status and wait until the
 // status becomes 'available'.
 var setupTrainingModel = function(customID, callback) {
-    var data1 = {};
-    request.post({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID + '/train',
-        body: JSON.stringify(data1)
-    }, function(error, response, body) {
-        var text = JSON.parse(body);
-        if (response.statusCode != 200) {
+    var params = {
+        "customization_id": customID,
+    };
+    speech_to_text.trainCustomization(params, function(err, res, body) {
+        if (err) {
             console.error("Training failed to start - exiting!");
-            callback(text.error, null);
+            callback(err, null);
         } else {
-            console.log('\nTraining request sent, returns: ' + response.statusCode);
-            var text = JSON.parse(body);
+            console.log('\nTraining request sent, returns: ' + body.statusCode);
             callback(null, customID);
         }
     });
@@ -264,20 +241,13 @@ var setupTrainingModel = function(customID, callback) {
 
 // List all customization models for a specific user
 var listAllCustomizations = function(callback) {
-    request.get({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/'
-    }, function(error, response, body) {
-        var text = JSON.parse(body);
-        if (response.statusCode != 200 || error) {
-            console.error('Failed to list all customizations');
-            callback(text.error, null);
+    var params = {};
+    speech_to_text.getCustomizations(params, function(err, res, body) {
+        if (err) {
+            console.error('Failed to get all customizations');
+            callback(err, null);
         } else {
-            console.log('\nGet models returns:');
-            console.log(body);
+            console.log(JSON.stringify(res, null, 2));
             callback(null);
         }
     });
@@ -285,19 +255,15 @@ var listAllCustomizations = function(callback) {
 
 // Delete a specific custom Model
 var deleteCustomModel = function(customID, callback) {
-    request.delete({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID
-    }, function(error, response, body) {
-        var text = JSON.parse(body);
-        if (response.statusCode != 200 || error) {
+    var params = {
+        "customization_id": customID
+    };
+    speech_to_text.deleteCustomization(params, function(err, res, body) {
+        if (err) {
             console.error('Failed to delete custom model :' + customID);
-            callback(text.error, null);
+            callback(err, null);
         } else {
-            console.log('Model deletion returns:' + response.statusCode);
+            console.log('Model deletion returns: ' + body.statusCode);
             callback(null);
         }
     });
@@ -305,21 +271,17 @@ var deleteCustomModel = function(customID, callback) {
 
 //Add a single word to the corpus
 var addSingleWord = function(customID, word, data, callback) {
-    var encodedWord = utf8.encode(word);
-    request.put({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID + '/words/' + encodedWord,
-        body: JSON.stringify(data)
-    }, function(error, response, body) {
-        console.log('Adding single word returns: ' + response.statusCode);
-        var text = JSON.parse(body);
-        if (response.statusCode != 201 || error) {
+    var params = {
+        "customization_id": customID,
+        "word": word,
+        "sounds_like": data.sounds_like,
+        "displays_as": data.displays_as
+    };
+    speech_to_text.addWord(params, function(err, res, body) {
+        console.log('Adding single word returns: ' + body.statusCode);
+        if (err) {
             console.error("Failed to add a word");
-            console.error(text.error);
-            callback(text.error, null);
+            callback(err, null);
         } else {
             callback(null, customID);
         }
@@ -328,20 +290,15 @@ var addSingleWord = function(customID, word, data, callback) {
 
 //Add multiple words to corpus
 var addMultipleWords = function(customID, words, callback) {
-    request.post({
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': 'Basic ' + new Buffer(username + ':' + password).toString('base64')
-        },
-        url: 'https://stream.watsonplatform.net/speech-to-text/api/v1/customizations/' + customID + '/words/',
-        body: JSON.stringify(words)
-    }, function(error, response, body) {
-        console.log('Adding multiple words returns: ' + response.statusCode);
-        var text = JSON.parse(body.toString());
-        if (response.statusCode != 201 || error) {
-            console.error("Failed to add words");
-            console.error(text.error);
-            callback(text.error, null);
+    var params = {
+        "customization_id": customID,
+        "words": words
+    };
+    speech_to_text.addWords(params, function(err, res, body) {
+        console.log('Adding single word returns: ' + body.statusCode);
+        if (err) {
+            console.error("Failed to add a words");
+            callback(err, null);
         } else {
             callback(null, customID);
         }
