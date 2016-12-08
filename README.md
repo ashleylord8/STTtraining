@@ -1,14 +1,37 @@
-# STTtraining
+# Speech to Text CLI
 
-## Starting locally
-Git clone the project https://github.com/ashleylord8/STTtraining.
 
-### Update the Workspace
-Replace `workspace.json` with the desired Conversation workspace JSON you wish to train.
-  * To grab your Conversation workspace JSON:
-    - Navigate to your Bluemix console and open the Conversation service instance where you imported the workspace.
-    - Click the menu icon in the upper-right corner of the workspace tile, and then select `Download as JSON`.
-  * Make sure to name the desired workspace JSON as `workspace.json` within the project folder.
+## Getting Started
+
+```
+npm watson-speech-to-text-utils
+```
+
+## Usage
+
+```
+watson-speech-to-text-utils create-and-train -f workspace.json
+```
+
+## License
+
+This sample code is licensed under Apache 2.0.
+
+## Contributing
+
+See [CONTRIBUTING](.github/CONTRIBUTING.md).
+
+## Open Source @ IBM
+Find more open source projects on the [IBM Github Page](http://ibm.github.io/)
+
+
+### How to get the workspace.json file
+  - Navigate to your Bluemix console and open the Conversation service instance where you imported the workspace.
+  - Click the menu icon in the upper-right corner of the workspace tile, and then select `Download as JSON`.
+
+---
+
+### TODO: UPDATE THIS
 
 ### Running the code
 Navigate to the correct directory by using the following command within the terminal:
