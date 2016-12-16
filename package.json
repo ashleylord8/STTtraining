@@ -17,10 +17,11 @@
     "url": "https://github.com/watson-developer-cloud/speech-to-text-utils/issues"
   },
   "dependencies": {
-    "dotenv": "^2.0.0",
-    "watson-developer-cloud": "^2.13.1",
     "bluebird": "^3.4.6",
-    "request": "^2.79.0"
+    "co": "^4.6.0",
+    "dotenv": "^2.0.0",
+    "request": "^2.79.0",
+    "watson-developer-cloud": "2.13.0"
   },
   "scripts": {
     "test": "npm run lint && npm run mocha",
@@ -34,5 +35,8 @@
     "eslint": "^3.11.1",
     "istanbul": "^0.4.2",
     "mocha": "^3.1.0"
+  },
+  "bin": {
+    "watson-speech-to-text-utils": "lib/index.js"
   }
 }
