@@ -1,17 +1,33 @@
-const exec = require('child_process').exec;
-const path = require('path');
-// eslint-disable-next-line
-const should = require('should');
-const pkg = require('../package.json');
 
-const bin = path.join(__dirname, '..', pkg.main);
-console.log(bin);
-describe('parse()', () => {
-  it('should print help when using --help', function(done) {
-    exec(bin + ' --help', function (error, stdout) {
-      stdout.should.containEql('Usage: index <command> [options]');
-      stdout.should.containEql('Commands:');
-      done();
-    });
-  });
+const path = require('path');
+require('dotenv').config({
+  path: path.join(__dirname, '../.env')
 });
+
+const Commands = require('../lib/commands');
+
+if (process.env.SPEECH_TO_TEXT_USERNAME) {
+  const cmd = new Commands({
+    username: process.env.SPEECH_TO_TEXT_USERNAME,
+    password: process.env.SPEECH_TO_TEXT_PASSWORD,
+  });
+
+  describe('commands()', () => {
+    it('should list the base models', () => cmd.listModels());
+
+    it('should validate credentials when using the authenticate method', () =>
+      cmd.authenticate()
+    );
+
+    it('should list the customizations', () => cmd.listCustomizations());
+
+    it('should get a customization by id', () =>
+      cmd.getCustomization({
+        customizationId: process.env.CUSTOMIZATION_ID,
+      })
+    );
+  });
+}
+else {
+  console.log('Skipping integration test. SPEECH_TO_TEXT_USERNAME is null or empty');
+}
