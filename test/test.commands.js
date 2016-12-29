@@ -23,7 +23,7 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
 
     it('should get a customization by id', () =>
       cmd.getCustomization({
-        customizationId: process.env.CUSTOMIZATION_ID,
+        customization_id: process.env.CUSTOMIZATION_ID,
       })
     );
   });
