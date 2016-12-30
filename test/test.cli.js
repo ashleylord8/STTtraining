@@ -39,8 +39,8 @@ describe('CLI()', () => {
     });
   });
   it('should print help when using an action and --help', function(done) {
-    exec(bin + ' list-base-models --help', function (error, stdout) {
-      stdout.should.containEql('Usage: list-base-models [options]');
+    exec(bin + ' base-models-list --help', function (error, stdout) {
+      stdout.should.containEql('Usage: base-models-list [options]');
       stdout.should.containEql('Options:');
       done();
     });

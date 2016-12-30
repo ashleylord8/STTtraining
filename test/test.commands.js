@@ -21,8 +21,20 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
 
     it('should list the customizations', () => cmd.listCustomizations());
 
-    it('should get a customization by id', () =>
+    it('should get a customization given a customization id', () =>
       cmd.getCustomization({
+        customization_id: process.env.CUSTOMIZATION_ID,
+      })
+    );
+
+    it('should list customization words given a customization id', () =>
+      cmd.listCustomizationWords({
+        customization_id: process.env.CUSTOMIZATION_ID,
+      })
+    );
+
+    it('should list corpora given a customization id', () =>
+      cmd.listCorpora({
         customization_id: process.env.CUSTOMIZATION_ID,
       })
     );
