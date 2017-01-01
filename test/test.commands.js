@@ -24,7 +24,7 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
         workspace: path.join(__dirname, './resources/workspace.json'),
         customization_name: `${pkg.name}-it`,
         customization_description: 'it test',
-        base_model_name: 'en-US_NarrowbandModel',
+        base_model_name: 'en-US_BroadbandModel',
       }).then(newCustomization => cmd.deleteCustomization(newCustomization));
     });
 
@@ -67,7 +67,7 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
     //     workspace: path.join(__dirname, './resources/workspace.json'),
     //     customization_name: `${pkg.name}-it`,
     //     customization_description: 'it test',
-    //     base_model_name: 'en-US_NarrowbandModel',
+    //     base_model_name: 'en-US_BroadbandModel',
     //   }).then(newCustomization => cmd.deleteCustomization(newCustomization));
     // });
 
@@ -77,7 +77,7 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
         workspace: './fake.json',
         customization_name: `${pkg.name}-it`,
         customization_description: 'it test',
-        base_model_name: 'en-US_NarrowbandModel',
+        base_model_name: 'en-US_BroadbandModel',
       })
       .then(() => done('createCustomization() needs a valid workspace'))
       .catch((error) => {
