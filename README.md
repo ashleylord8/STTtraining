@@ -1,16 +1,106 @@
 # Speech to Text CLI
 
+Speech to text Command line tool. 
 
 ## Getting Started
 
 ```
-npm watson-speech-to-text-utils
+npm install watson-speech-to-text-utils -g
 ```
 
 ## Usage
 
 ```
-watson-speech-to-text-utils create-and-train -f workspace.json
+$ watson-speech-to-text-utils
+
+Usage:  <command> [options]
+
+
+Commands:
+
+  set-credentials [options]                  Set Speech to Text username and password
+  base-models-list [options]                 List all the base models
+  customization-create-and-train [options]   Create a customization model using a Conversation workspace JSON file
+  customization-list [options]               List all the customization
+  customization-train [options]              Train a customization
+  customization-status [options]             Get customization status
+  customization-delete [options]             Delete a customization
+  customization-list-words [options]         List all out-of-vocabulary(OOV) words for a customization
+  corpus-list [options]                      Lists information about all corpora for a customization model
+  corpus-status [options]                    Lists information about all corpora for a customization model
+  corpus-add-words [options]                 Add a group of words from a file into a corpus
+  corpus-add-word [options]                  Add a single word to the corpus
+  corpus-delete-word [options]               Delete a single word from a corpus
+
+Options:
+
+  -h, --help     output usage information
+  -V, --version  output the version number
+```
+
+
+### How to get the `workspace.json` file
+  - Navigate to your Bluemix console and open the Conversation service instance where you imported the workspace.
+  - Click the menu icon in the upper-right corner of the workspace tile, and then select `Download as JSON`.
+
+### Adding multiple words to a customization
+
+```
+Usage: watson-speech-to-text-utils corpus-add-words [options]
+
+  Add a group of words from a file into a corpus
+
+  Options:
+
+    -h, --help                                 output usage information
+    -u, --username [username]                  Speech to text username
+    -p, --password [password]                  Speech to text password
+    -i, --customization_id <customization_id>  The customization identifier
+    -w, --words <words>                        The JSON file with the words to add to the corpus
+```
+
+The words JSON file should look like:
+
+```json
+{
+  "words": [{
+    "display_as": "could",
+    "sounds_like": [ "could" ],
+    "word": "culd"
+  }, {
+    "display_as": "closeby",
+    "sounds_like": [ "closeby" ],
+    "word": "closeby"
+  }, {
+    "display_as": "cya",
+    "sounds_like": [ "cya", "see ya" ],
+    "word": "cya"
+  }]
+}
+```
+
+### Adding a single word to a customization
+
+
+```
+Usage: watson-speech-to-text-utils corpus-add-word [options]
+
+  Add a single word to the corpus
+
+  Options:
+
+    -h, --help                                 output usage information
+    -i, --customization_id <customization_id>  The customization identifier
+    -w, --word <word>                          The word
+    -s, --sounds_like [sounds_like]            The pronunciation of the word
+    -d, --displays_as [displays_as]            How the word is displayed
+
+```
+
+For example:
+
+```bash
+watson-speech-to-text-utils corpus-add-word -i 67f35b00-8c0d-12e6-8ac8-6333954f158e -w cya -d cya -s "cya, see ya"
 ```
 
 ## License
@@ -23,107 +113,3 @@ See [CONTRIBUTING](.github/CONTRIBUTING.md).
 
 ## Open Source @ IBM
 Find more open source projects on the [IBM Github Page](http://ibm.github.io/)
-
-
-### How to get the workspace.json file
-  - Navigate to your Bluemix console and open the Conversation service instance where you imported the workspace.
-  - Click the menu icon in the upper-right corner of the workspace tile, and then select `Download as JSON`.
-
----
-
-### TODO: UPDATE THIS
-
-### Running the code
-Navigate to the correct directory by using the following command within the terminal:
-
-  ```bash
-  cd ./STTtraining
-  ```
-Copy the credentials (`username` and `password`) from your Speech to Text service into the `utils.js` script (lines 56 and 57). Save your changes in this file.
-
-1. To `create` and `train` a custom speech to text (STT) model, run the following command :
-
-  ```bash
-  node testSTTcustom.js --action=create_and_train
-  ```
-If you get back `Model creation returns: 201` and `Model customization_id:  customID`, then your custom model has been created successfully. Please note down the *customID* as you may be needing it to test/run some of the other commands.
-If you get back `Training complete!` then your Speech to Text service has been trained.
-
-2. To `list` all STT customization models, run the following command :
-
-  ```bash
-  node testSTTcustom.js --action=list
-  ```
-3. To `delete` a STT customization model whose customization id is *custom_id*, run the following command :
-
-  ```bash
-  node testSTTcustom.js --action=delete --id=custom_id
-  ```
-Please be sure to replace *custom_id* with the appropriate id in the above command.
-If you get back `Model deletion returns:200` then your STT custom model has been deleted
-
-4. To list all out of vocabulary words (`OOVs`) for a STT custom model whose customization id is *custom_id*, run the following command :
-
-  ```bash
-  node testSTTcustom.js --action=OOVs --id=custom_id
-  ```
-Please be sure to replace *custom_id* with the appropriate id in the above command.
-
-5. To `add multiple words, OOVs and their pronunciations` to the STT custom model whose customization id is *custom_id*, you first have to create a JSON file. Following is the sample JSON that you can look at to create your own file.
-
-  ```json
-  {"words": [
-     {
-        "display_as": "could",
-        "sounds_like": ["could"],
-        "word": "culd"
-     },
-     {
-        "display_as": "closeby",
-        "sounds_like": ["closeby"],
-        "word": "closeby"
-     },
-     {
-        "display_as": "cya",
-        "sounds_like": ["cya", "see ya"],
-        "word": "cya"
-     }
-   ]
- }
- ```
-`word` refers to the word that is to be added. `sounds_like` refers to the pronunciation for the word. You can also add multiple pronunciations for a single word [ Notice *sounds_like* for the word `cya` in the above example]. `displays_as` refers to the way added word is to be displayed. Also, note the fields *displays_as* and *sounds_like* are optional. You can choose to add/not add them to the JSON.
-
- If you'd just like to add pronunciations for OOVs, then you can simply copy the list of OOVs you get in Step 4 and paste them into a separate JSON file. You can then go ahead and modify the pronunciations.
-
- Once you've created the JSON file, use the following command to add words and their pronunciations
-
- ```bash
- node testSTTcustom.js --action=add_words --id=custom_id --file=yourFilePath/fileName.json
- ```
-Please be sure to replace *custom_id* with the appropriate id and *yourFilePath/fileName.json* with the appropriate path in the above command.
-
-6. To `add a single word, OOV and its pronunciation` to the STT custom model whose customization id is *custom_id*, run the following command :
-
- ```bash
- node testSTTcustom.js --action=add_word --id=custom_id --word=theWordToBeAdded --soundsLike='pronunciation' --displays_as=displayWordAs
- ```
-`word` refers to the word that is to be added. `sounds_like` refers to the pronunciation for the word. You can also add multiple pronunciations for a single word. `displays_as` refers to the way added word is to be displayed.
-
- Please be sure to replace *custom_id* with the appropriate id, *theWordToBeAdded* with the word that is to be added, *pronunciation* with appropriate pronunciation(s) and *displaysWordAs* with the word you'd like to be displayed.
-You can add multiple pronunciations by separating them with a `comma` i.e *--soundsLike='pronunciation1, pronunciation2'*
-
- Also, note the fields *--displaysAs* and *--soundsLike* are optional. You can choose to add/not add them to the command.
-
-7. To see the `status of corpus` (.e. whether the added corpus has been analyzed or not) of the STT custom model whose customization id is *custom_id*, run the following command:
-
- ```bash
- node testSTTcustom.js --action=corpus_status --id=custom_id
- ```
-Please be sure to replace *custom_id* with the appropriate id in the above command.
-
-8. To see the `status of model`(i.e. whether the added corpus has been trained or is ready to be trained) of the STT custom model whose customization id is *custom_id*, run the following command:
-
- ```bash
- node testSTTcustom.js --action=model_status --id=custom_id
- ```
-Please be sure to replace *custom_id* with the appropriate id in the above command.
