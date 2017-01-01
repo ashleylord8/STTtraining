@@ -26,7 +26,7 @@
     "inquirer": "^2.0.0",
     "object.pick": "^1.2.0",
     "preferences": "^0.2.1",
-    "watson-developer-cloud": "2.13.0"
+    "watson-developer-cloud": "git://github.com/watson-developer-cloud/node-sdk.git#stt-jsdoc"
   },
   "scripts": {
     "test": "npm run lint && npm run mocha",

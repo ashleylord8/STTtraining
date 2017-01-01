@@ -1,10 +1,10 @@
 const exec = require('child_process').exec;
 const path = require('path');
-// eslint-disable-next-line
-const should = require('should');
 const pkg = require('../package.json');
-
 const bin = path.join(__dirname, '..', pkg.main);
+
+require('should');
+
 describe('CLI()', () => {
   it('should print warning if used as node module', function(done) {
     (function(){

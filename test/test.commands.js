@@ -7,6 +7,8 @@ require('dotenv').config({
 const pkg = require('../package.json');
 const Commands = require('../lib/commands');
 
+require('should');
+
 if (process.env.SPEECH_TO_TEXT_USERNAME) {
   const cmd = new Commands({
     username: process.env.SPEECH_TO_TEXT_USERNAME,
@@ -15,6 +17,16 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
 
   describe('commands()', function() {
     this.slow(1000);
+
+    it('createCustomization()', () => {
+      this.timeout(50000);
+      return cmd.createCustomization({
+        workspace: path.join(__dirname, './resources/workspace.json'),
+        customization_name: `${pkg.name}-it`,
+        customization_description: 'it test',
+        base_model_name: 'en-US_NarrowbandModel',
+      }).then(newCustomization => cmd.deleteCustomization(newCustomization));
+    });
 
     it('listModels()', () => cmd.listModels());
 
@@ -42,18 +54,15 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
       })
     );
 
-    it('createCustomization()', () => {
-      this.timeout(50000);
-      return cmd.createCustomization({
-        workspace: path.join(__dirname, './resources/workspace.json'),
-        customization_name: `${pkg.name}-it`,
-        customization_description: 'it test',
-        base_model_name: 'en-US_NarrowbandModel',
-      }).then(newCustomization => cmd.deleteCustomization(newCustomization));
-    });
+    it('listCorpus()', () =>
+      cmd.getCorpus({
+        customization_id: process.env.CUSTOMIZATION_ID,
+      })
+    );
 
-    // it('createAndTrainCustomization()', () => {
-    //   this.timeout(50000);
+    // TODO: work in progress
+    // it('createAndTrainCustomization()', function() {
+    //   this.timeout(100000);
     //   return cmd.createAndTrainCustomization({
     //     workspace: path.join(__dirname, './resources/workspace.json'),
     //     customization_name: `${pkg.name}-it`,
@@ -61,6 +70,40 @@ if (process.env.SPEECH_TO_TEXT_USERNAME) {
     //     base_model_name: 'en-US_NarrowbandModel',
     //   }).then(newCustomization => cmd.deleteCustomization(newCustomization));
     // });
+
+    it('createAndTrainCustomization() without a workspace.json file', function (done) {
+      this.timeout(50000);
+      cmd.createAndTrainCustomization({
+        workspace: './fake.json',
+        customization_name: `${pkg.name}-it`,
+        customization_description: 'it test',
+        base_model_name: 'en-US_NarrowbandModel',
+      })
+      .then(() => done('createCustomization() needs a valid workspace'))
+      .catch((error) => {
+        error.message.should.containEql('no such file or directory, open \'./fake.json\'');
+        done();
+      });
+    });
+
+    it('addWord()', function()  {
+      this.timeout(60000);
+      return cmd.addWord({
+        customization_id: process.env.CUSTOMIZATION_ID,
+        word: 'IEEE',
+        displays_as: 'IEEE',
+        sounds_like: 'IEEE,I triple three',
+      });
+    });
+
+    it('addWords()', function() {
+      this.timeout(60000);
+      return cmd.addWords({
+        customization_id: process.env.CUSTOMIZATION_ID,
+        words: path.join(__dirname, './resources/words.json'),
+      });
+    });
+
   });
 }
 else {
