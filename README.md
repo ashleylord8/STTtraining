@@ -1,16 +1,19 @@
 # Speech to Text CLI
 
-Speech to text Command line tool. 
+Speech to text CLI that helps you manage speech customizations.
+
 
 ## Getting Started
 
-```
+Make sure you read the documentation for [Speech to Text](docs) before using this library.
+
+```bash
 npm install watson-speech-to-text-utils -g
 ```
 
 ## Usage
 
-```
+```none
 $ watson-speech-to-text-utils
 
 Usage:  <command> [options]
@@ -31,12 +34,17 @@ Commands:
   corpus-add-words [options]                 Add a group of words from a file into a corpus
   corpus-add-word [options]                  Add a single word to the corpus
   corpus-delete-word [options]               Delete a single word from a corpus
+  corpus-from-workspace [options]            Build a Speech to text corpus from a Conversation workspace
 
 Options:
 
   -h, --help     output usage information
   -V, --version  output the version number
 ```
+
+### Getting Started
+
+All the commands need an Speech to Text `username` and `password`. Take a look at the [Getting Credentials](getting-credentials) page to learn how to get credentials for the Watson services.
 
 
 ### How to get the `workspace.json` file
@@ -45,7 +53,7 @@ Options:
 
 ### Adding multiple words to a customization
 
-```
+```none
 Usage: watson-speech-to-text-utils corpus-add-words [options]
 
   Add a group of words from a file into a corpus
@@ -113,3 +121,6 @@ See [CONTRIBUTING](.github/CONTRIBUTING.md).
 
 ## Open Source @ IBM
 Find more open source projects on the [IBM Github Page](http://ibm.github.io/)
+
+[docs]: http://www.ibm.com/watson/developercloud/doc/speech-to-text/index.shtml
+[getting-credentials]: http://www.ibm.com/watson/developercloud/doc/getting_started/gs-credentials.shtml#getCreds

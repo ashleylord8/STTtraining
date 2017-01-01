@@ -57,4 +57,10 @@ describe('CLI()', () => {
       done();
     });
   });
+  it('should get a corpus from a workspace', function(done) {
+    exec(bin + ' corpus-from-workspace -w ./test/resources/workspace.json', function (error, stdout) {
+      stdout.should.containEql('Are there any around here');
+      done();
+    });
+  });
 });
